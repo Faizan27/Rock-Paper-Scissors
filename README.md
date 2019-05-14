@@ -5,7 +5,7 @@ A Rock-Paper-Scissors game using computer vision and machine learning on Raspber
 ## Summary
 ### Overview of the game
 
-The game uses a Raspberry Pi computer and Raspberry Pi camera installed on a 3D printed support with LED strips to achieve consistent images.
+The game uses a Raspberry Pi computer and Raspberry Pi camera installed on a support with LED strips to achieve consistent images.
 
 The pictures taken by the camera are processed and fed to an image classifier that determines whether the gesture corresponds to "Rock", "Paper" or "Scissors" gestures.
 
@@ -43,7 +43,7 @@ The project depends on and has been tested with the following libraries:
 This file opens the camera in "capture mode", to capture and label images that will later be used to train the image classifier. The captured images are automatically named and stored in a folder structure.
 
 * *train.py*  
-This script reads and processes the training images in preparation for training the image classifier. The processed image data is then used to train the support vector machine image classifier. The trained classifier is stored in the `clf.pkl` file read by `play.py`.
+This script reads and processes the training images in preparation for training the image classifier. The processed image data is then used to train the support vector machine image classifier. The trained classifier is stored in the `clf.pkl` file read by `maindriver.py`.
 
 * *maindriver.py*  
 This file runs the actual Rock-Paper-Scissors game using the camera and the trained image classifier in a graphical user interface (GUI). Images from each play are captured and added to the image bank, creating additional images to train the classifier.
