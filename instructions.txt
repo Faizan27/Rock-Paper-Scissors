@@ -1,0 +1,23 @@
+1) Dependencies
+
+The project depends on and has been tested with the following libraries:
+
+* OpenCV >= 3.3.0 with bindings for Python 3*
+* Python >= 3.4+
+* Numpy >= 1.13.0
+* Scikit-Learn >= 0.18.2
+* Scikit-Image >= 0.13.0
+* Pygame >= 1.9.3
+* Picamera
+
+2) Hardware:
+
+* [Raspberry Pi 3 Model B or B+ computer](https://www.raspberrypi.org/products/raspberry-pi-3-model-b-plus/)
+* [Raspberry Pi Camera Module V2](https://www.raspberrypi.org/products/camera-module-v2/)
+* A green background to allow background subtraction in the captured images.
+
+3) Program files
+
+--> image_capture.py - captures images for training set generation.
+--> train.py - trains the model
+--> maindriver.py - main driver of the game  
